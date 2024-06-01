@@ -1,0 +1,87 @@
+
+form {
+    width: 400px; /* Ancho del formulario */
+    height: 550px;
+    margin: 200px auto 0; /* Centrar el formulario verticalmente con un margen superior de 200px */
+    padding: 20px; /* Espaciado interno para el contenido del formulario */
+    border: 1px solid #ccc; /* Borde del formulario */
+    border-radius: 19px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    background-color: rgba(254, 254, 254, 0.864);
+    font-family: "Poppins";
+}
+
+img {
+    display: block; /* Asegura que la imagen sea tratada como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+form div.mb-3 {
+    margin-bottom: 100px; /* Ajusta este valor según la cantidad de espacio que desees agregar */
+}
+
+button {
+   
+    left: 50%; /* Centra el botón horizontalmente */
+    
+    
+    margin-top: 50px; /* Mueve el botón 20px hacia abajo */
+    display: block; /* Asegura que el botón sea tratado como un bloque */
+    margin-left: auto; /* Centra el botón horizontalmente */
+    margin-right: auto; /* Centra el botón horizontalmente */
+    width: 250px;
+    padding: 10px; /* Espaciado interno para el contenido del formulario */
+    border: 1px solid #ccc; /* Borde del formulario */
+    border-radius: 30px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    background: linear-gradient(to right, #292fe7, #0091ff); /* Gradiente de color de naranja a rosa */
+
+}
+
+.icon-input {
+    position: relative;
+}
+
+.icon-input i {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1948f3db;
+}
+
+
+
+.input-container input::placeholder {
+    text-align: center; /* Centra el texto del placeholder */
+    margin-left: 40px;
+}
+
+input {
+
+   
+    display: block; /* Asegura que el botón sea tratado como un bloque */
+    margin-left: auto; /* Centra el botón horizontalmente */
+    margin-right: auto; /* Centra el botón horizontalmente */
+    width: 300px;
+    padding: 10px; /* Espaciado interno para el contenido del formulario */
+    border: 1px solid #ccc; /* Borde del formulario */
+    border-radius: 30px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    
+
+}
+
+.input-container input {
+    
+    text-indent: 30px; /* Mueve el texto hacia la derecha después del icono */
+}
+
+.text-danger {
+    margin-top: 10px; /* Mueve el mensaje hacia abajo */
+    margin-left: 30px; /* Mueve el mensaje hacia la derecha */
+}
+
+.input-container {
+    margin-bottom: 30px !important; /* Espacio entre cada par de campos de entrada */
+}

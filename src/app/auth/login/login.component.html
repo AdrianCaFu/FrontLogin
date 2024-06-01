@@ -1,0 +1,34 @@
+<form [formGroup]="loginForm">
+    <div class="logo-container">
+        <img src="assets/Logo_VM-2rt.jpg" alt="Logo">
+    </div>
+    <p class="text-danger">{{ loginError }}</p>
+    <div class="mb-3 input-container">
+        
+        <div class="icon-input">
+            <i class="fas fa-user"></i>
+            <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario">
+        </div>
+        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-danger">
+            <div *ngIf="email.errors?.['required']">
+                Campo obligatorio.
+            </div>
+            <div *ngIf="email.errors?.['email']">
+                El correo debe tener un formato válido.
+            </div>
+        </div>
+    </div>
+    <div class="mb-3 input-container">
+        
+        <div class="icon-input">
+            <i class="fas fa-lock"></i>
+            <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+        </div>
+        <div *ngIf="password.invalid && (password.dirty || password.touched)" class="text-danger">
+            <div *ngIf="password.errors?.['required']">
+                Campo obligatorio.
+            </div>
+        </div> 
+    </div>
+    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+</form>
