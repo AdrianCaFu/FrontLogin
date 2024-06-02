@@ -15,7 +15,11 @@ export class LoginComponent implements OnInit {
     email:['',[Validators.required,Validators.email]],
     password: ['',Validators.required],
   })
-  constructor(private formBuilder:FormBuilder, private router:Router, private loginService: LoginService) { }
+  constructor(
+    private formBuilder:FormBuilder, 
+    private router:Router,
+    private loginService: LoginService
+  ) { }
 
   ngOnInit(): void {
   }
@@ -42,7 +46,7 @@ export class LoginComponent implements OnInit {
         },
         complete: () => {
           console.info("Login completo");
-          this.router.navigateByUrl('/inicio');
+          this.router.navigate(['/modal']);
           this.loginForm.reset();
         }
       })

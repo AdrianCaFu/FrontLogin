@@ -1,0 +1,14 @@
+<div>
+    <h2>Enter Details</h2>
+    <form (ngSubmit)="getHorario()">
+      <div>
+        <label for="profesorId">Profesor ID</label>
+        <input type="text" id="profesorId" [(ngModel)]="profesorId" name="profesorId" required>
+      </div>
+      <div>
+        <label for="day">Día</label>
+        <input type="text" id="dia" [(ngModel)]="dia" name="dia" required>
+      </div>
+      <button type="submit">Horario</button>
+    </form>
+  </div>

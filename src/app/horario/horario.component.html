@@ -1,0 +1,21 @@
+<div>
+    <h2>Horario</h2>
+    <table *ngIf="horario">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Class</th>
+          <th>Room</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of horario">
+          <td>{{ item.time }}</td>
+          <td>{{ item.class }}</td>
+          <td>{{ item.room }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Acomodar la tabla al horario que viene de base de datos-->
