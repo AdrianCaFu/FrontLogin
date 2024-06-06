@@ -12,7 +12,7 @@ import { LoginRequest } from 'src/app/services/auth/loginRequest';
 export class LoginComponent implements OnInit {
   loginError:string="";
   loginForm=this.formBuilder.group({
-    email:['',[Validators.required,Validators.email]],
+    username:['',[Validators.required]],
     password: ['',Validators.required],
   })
   constructor(private formBuilder:FormBuilder, private router:Router, private loginService: LoginService) { }
@@ -20,8 +20,8 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  get email(){
-    return this.loginForm.controls.email;
+  get username(){
+    return this.loginForm.controls.username;
   }
 
   get password()

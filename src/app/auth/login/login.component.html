@@ -7,14 +7,11 @@
         
         <div class="icon-input">
             <i class="fas fa-user"></i>
-            <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Usuario">
+            <input formControlName="username" type="text" class="form-control" id="exampleInputEmail1"  placeholder="Usuario">
         </div>
-        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-danger">
-            <div *ngIf="email.errors?.['required']">
+        <div *ngIf="username.invalid && (username.dirty || username.touched)" class="text-danger">
+            <div *ngIf="username.errors?.['required']">
                 Campo obligatorio.
-            </div>
-            <div *ngIf="email.errors?.['email']">
-                El correo debe tener un formato válido.
             </div>
         </div>
     </div>
@@ -30,5 +27,5 @@
             </div>
         </div> 
     </div>
-    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+    <button type="submit" (click)="login()" class="btn btn-primary">Iniciar Sesión</button>
 </form>
