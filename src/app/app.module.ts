@@ -12,12 +12,14 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { JwtInterceptorService } from './services/auth/jwt-interceptor.service';
 import { ErrorInterceptorService } from './services/auth/error-interceptor.service';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     FooterComponent,
+    DashboardComponent,
     
    
   ],
