@@ -1,5 +1,58 @@
-<div class="logo-container">
-    <img src="assets/Logo_VM-2rt.jpg" alt="Logo">
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Horario del Profesor Ausente</h1>
+
+  <form [formGroup]="searchForm" (ngSubmit)="buscarHoras()">
+    <div class="form-group mb-4">
+      <label for="idProfesor">ID del Profesor:</label>
+      <input type="text" id="idProfesor" formControlName="idProfesor" class="form-control" required>
+      <div *ngIf="searchForm?.get('idProfesor')?.invalid && searchForm?.get('idProfesor')?.touched" class="text-danger">
+        ID del profesor es requerido.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="diaSemana">Día de la Semana:</label>
+      <input type="text" id="diaSemana" formControlName="diaSemana" class="form-control" required>
+      <div *ngIf="searchForm?.get('diaSemana')?.invalid && searchForm?.get('diaSemana')?.touched" class="text-danger">
+        Día de la semana es requerido.
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <button type="submit" class="btn btn-primary">Buscar</button>
+    </div>
+  </form>
+
+  <table *ngIf="horasProfesor.length > 0" class="table table-striped table-hover mt-4 shadow-sm">
+    <thead class="thead-dark">
+      <tr>
+        <th>Sesión</th>
+        <th>Inicio</th>
+        <th>Fin</th>
+        <th>Tarea</th>
+        <th>Descripción</th>
+        <th>Aula</th>
+        <th>Grupos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let hora of horasProfesor">
+        <td>{{ hora.horaSesionDto.sesion }}</td>
+        <td>{{ hora.horaSesionDto.inicio }}</td>
+        <td>{{ hora.horaSesionDto.fin }}</td>
+        <td>{{ hora.tarea }}</td>
+        <td>{{ hora.descripcion }}</td>
+        <td>{{ hora.aula }}</td>
+        <td>{{ hora.grupos }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  
+
+  <div class="text-center mt-3">
+    <button type="button" class="btn btn-secondary" (click)="salir()">Salir</button>
+  </div>
+
+  <div class="fixed-bottom" *ngIf="mostrarFooter">
+    <app-footer></app-footer>
+  </div>
 </div>
-<p *ngIf="!userLoginOn" class="alert alert-danger">Usuario NO autenticado</p>
-<p *ngIf="userLoginOn" class="alert alert-success">Usuario Autenticado</p>

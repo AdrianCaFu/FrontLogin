@@ -37,12 +37,12 @@ export class LoginService {
 
   private handleError(error:HttpErrorResponse){
     if(error.status===0){
-      console.error('Se ha producio un error ', error.error);
+      console.error('Se ha producido un error', error.error);
     }
     else{
       console.error('Backend retornó el código de estado ', error);
     }
-    return throwError(()=> new Error('Algo falló. Por favor intente nuevamente.'));
+    return throwError(()=> new Error('Credenciales incorrectas.'));
   }
 
   get userData():Observable<String>{
