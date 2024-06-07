@@ -1,3 +1,27 @@
-footer {
-    background: url(https://img.freepik.com/foto-gratis/fondo-abstracto-textura_1258-30506.jpg?w=740&t=st=1717059758~exp=1717060358~hmac=c687a7a59034daf504fa007d334263a5ecda010a99c195c698470539b98b8850)
+
+.text-center{
+    background-color: rgba(254, 254, 254, 0.864);  
+     
+}
+
+.logo-container img{
+    width: 50px;
+    height: auto;
+    margin-bottom: 0.10px;
+}
+
+.small-footer{
+    background-color: rgba(254, 254, 254, 0.864);
+}
+
+.btn-link {
+    font-size: 0.8em; /* Ajusta el tamaño de la fuente de los íconos */
+    height: 5px;
+}
+  
+.small-footer .text-center {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-bottom: 5px;
+    font-size: 10px;
+    height: 10px;
 }

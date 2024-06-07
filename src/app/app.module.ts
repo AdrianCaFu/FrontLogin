@@ -28,6 +28,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+     
   ],
   providers: [
     {provide:HTTP_INTERCEPTORS,useClass:JwtInterceptorService,multi:true},
