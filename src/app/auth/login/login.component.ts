@@ -15,9 +15,16 @@ export class LoginComponent implements OnInit {
     username:['',[Validators.required]],
     password: ['',Validators.required],
   })
+
+  showPassword: boolean = false;
+  
   constructor(private formBuilder:FormBuilder, private router:Router, private loginService: LoginService) { }
 
   ngOnInit(): void {
+  }
+
+  togglePasswordVisibility(): void {
+    this.showPassword = !this.showPassword;
   }
 
   get username(){

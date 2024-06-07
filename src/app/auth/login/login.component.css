@@ -2,7 +2,7 @@
 form {
     width: 400px; /* Ancho del formulario */
     height: 550px;
-    margin: 200px auto 0; /* Centrar el formulario verticalmente con un margen superior de 200px */
+    margin: 130px auto 0; /* Centrar el formulario verticalmente con un margen superior de 200px */
     padding: 20px; /* Espaciado interno para el contenido del formulario */
     border: 1px solid #ccc; /* Borde del formulario */
     border-radius: 19px; /* Bordes redondeados */
@@ -14,6 +14,7 @@ form {
 img {
     display: block; /* Asegura que la imagen sea tratada como un bloque */
     margin: 0 auto; /* Centra la imagen horizontalmente */
+    padding-bottom: 20px;
 }
 
 form div.mb-3 {
@@ -23,8 +24,6 @@ form div.mb-3 {
 button {
    
     left: 50%; /* Centra el botón horizontalmente */
-    
-    
     margin-top: 50px; /* Mueve el botón 20px hacia abajo */
     display: block; /* Asegura que el botón sea tratado como un bloque */
     margin-left: auto; /* Centra el botón horizontalmente */
@@ -42,12 +41,29 @@ button {
     position: relative;
 }
 
-.icon-input i {
+.icon-input i.fa-lock, .icon-input i.fa-user{
     position: absolute;
     left: 50px;
     top: 50%;
     transform: translateY(-50%);
     color: #1948f3db;
+}
+
+.icon-input i.fa-eye, .icon-input i.fa-eye-slash {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #1948f3db;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container input {
+    padding-right: 30px; /* Asegura que el texto no se superponga con el icono */
 }
 
 
