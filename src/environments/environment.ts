@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  urlHost:'http://localhost:8080/',
-  urlApi: 'http://localhost:8080/api/guardias',
+  urlHost:'https://apiguardias.onrender.com',
+  urlApi: 'https://apiguardias.onrender.com/api/guardias',
   userId:1
 };
 
