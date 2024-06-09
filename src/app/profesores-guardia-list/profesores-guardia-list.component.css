@@ -1,0 +1,79 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: rgba(4, 135, 217, 0.731);
+  }
+  
+  h1 {
+    font-weight: 600;
+    color:  #f8f9fa;;
+  }
+  
+  form {
+    background: #fdfdfdc8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  form:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .table {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #4c3f3fb2;
+  }
+  
+  .btn-primary {
+   
+    width: 200px;
+    padding: 10px; /* Espaciado interno para el contenido del formulario */
+    
+    border-radius: 30px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    background: linear-gradient(to right, #292fe7, #0091ff); /* Gradiente de color de naranja a rosa */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+  .btn-secondary {
+    width: 200px;
+    padding: 10px; /* Espaciado interno para el contenido del formulario */
+    
+    border-radius: 30px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    background: linear-gradient(to right, #fb0202c7, #f95e5eb8); /* Gradiente de color de naranja a rosa */
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+  }
+  
+  .alert {
+    border-radius: 8px;
+  }
+  
+  .table thead {
+    
+    color: rgba(4, 135, 217, 0.731);
+  }
+  
+  .table th,
+  .table td {
+    vertical-align: middle;
+    color:   white; 
+  }
+  
+  .fixed-bottom {
+    background-color: #f8f9fa;
+    box-shadow: 0 -2px 4px rgba(88, 88, 88, 0.1);
+  }

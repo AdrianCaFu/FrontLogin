@@ -46,7 +46,11 @@
     </tbody>
   </table>
 
-  
+  <div *ngIf="mostrarComponente">
+    <app-profesores-guardia-list
+      [diaSemana]="searchForm.get('diaSemana')?.value">
+    </app-profesores-guardia-list>
+  </div>
 
   <div class="text-center mt-3">
     <button type="button" class="btn btn-secondary" (click)="salir()">Salir</button>

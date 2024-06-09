@@ -13,6 +13,7 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { JwtInterceptorService } from './services/auth/jwt-interceptor.service';
 import { ErrorInterceptorService } from './services/auth/error-interceptor.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProfesoresGuardiaListComponent } from './profesores-guardia-list/profesores-guardia-list.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     LoginComponent,
     FooterComponent,
     DashboardComponent,
+    ProfesoresGuardiaListComponent,
     
    
   ],

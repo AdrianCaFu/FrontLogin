@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Profesores de Guardia para cada Sesión</h1>
+
+    <table *ngIf="guardias.length > 0" class="table table-striped table-hover mt-4 shadow-sm">
+        <thead class="thead-dark">
+            <tr>
+                <th>Sesión</th>
+                <th>Profesor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let guardia of guardias">
+                <td>{{guardia.sesion}}</td>
+                <td>{{guardia.profesor}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

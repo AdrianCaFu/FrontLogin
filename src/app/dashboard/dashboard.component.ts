@@ -14,6 +14,7 @@ export class DashboardComponent {
   searchForm: FormGroup;
   horasProfesor: any[] = [];
   mostrarFooter: boolean = true; // O false, dependiendo de tus necesidades
+  mostrarComponente:boolean = false //Controlamos la visibilidad de componentes en el dashboard
   
 
   constructor(private formBuilder: FormBuilder, private dashboardService: DashboardService, private router: Router) {
@@ -30,6 +31,7 @@ export class DashboardComponent {
     this.dashboardService.obtenerHorarioProfesor(idProfesor, diaSemana).subscribe(
       (data) => {
         this.horasProfesor = data;
+        this.mostrarComponente = true;
       },
       (error) => {
         console.error(error);

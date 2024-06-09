@@ -73,7 +73,17 @@ form:hover {
   color:   white; 
 }
 
+.container {
+  min-height: calc(100vh - 100px); /* Ajusta según sea necesario, considerando la altura del footer */
+  overflow-y: auto; /* Agrega scroll vertical cuando el contenido exceda la altura de la ventana */
+  padding-bottom: 100px; /* Ajusta según sea necesario, considerando la altura del footer */
+}
+
 .fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #f8f9fa;
   box-shadow: 0 -2px 4px rgba(88, 88, 88, 0.1);
+  z-index: 999; /* Asegura que el footer esté por encima del contenido */
 }
