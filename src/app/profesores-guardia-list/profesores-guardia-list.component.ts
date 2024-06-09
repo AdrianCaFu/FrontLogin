@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { GuardiaService } from '../services/guardia.service';
 import { Subscription } from 'rxjs';
 
@@ -23,6 +23,12 @@ export class ProfesoresGuardiaListComponent implements OnInit {
     console.log('dia: '+this.diaSemana)
     if (this.diaSemana) {
       this.mostrarGuardia(this.diaSemana);
+    }
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['diaSemana'] && !changes['diaSemana'].firstChange) {
+      this.mostrarGuardia(changes['diaSemana'].currentValue);
     }
   }
 
