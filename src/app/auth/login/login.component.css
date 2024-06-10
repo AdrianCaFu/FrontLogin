@@ -101,3 +101,12 @@ input {
 .input-container {
     margin-bottom: 30px !important; /* Espacio entre cada par de campos de entrada */
 }
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 0 -2px 4px rgba(88, 88, 88, 0.1);
+    z-index: 999; /* Asegura que el footer esté por encima del contenido */
+  }
