@@ -1,26 +1,23 @@
-# Angular Login Project
+# Frontend Guardias
 
-This project demonstrates how to implement a login functionality in an Angular application.
+Este proyecto representa la parte frontend que se conecta a un backend desarrollado en Java, sobre la APIREST Guardias profesores.
 
-## Overview
+## Resumen
 
-This project showcases the implementation of a login feature in an Angular application. It utilizes Angular's powerful features such as components, services, and routing to create a seamless login experience for users.
+Este proyecto muestra la implementación de una funcionalidad de inicio de sesión y un dashboard donde se muestra el horario de un profesor un día concreto
+y los profesores disponibles de guardia dicho día para cada hora lectiva.
 
-Technologies used:
+Tecnologías utilizadas:
   - Angular
   - TypeScript
   - HTML/CSS
 
-## YouTube Channel
-
-   For a detailed step-by-step explanation of the login implementation, please visit (https://youtu.be/jkdLRbrJj9M).
-
 ## Installation
 
-Follow these steps to install and run the project:
+Sigue estos pasos para instalar y ejecutar el proyecto:
 
-1. Clone the repository: `git clone https://github.com/irojascorsico/angular-login`
-2. Navigate to the project directory: `cd your-repo`
-3. Install dependencies: `npm install`
-4. Run the application: `ng serve`
-5. Open your browser and visit `http://localhost:4200` to view the application
+1. Clona el repositorio: git clone https://github.com/AdrianCaFu/FrontLogin.git
+2. Navega al directorio del proyecto: cd your-repo
+3. Instala las dependencias: npm install
+4. Ejecuta la aplicación: ng serve
+5. Abre tu navegador y visita http://localhost:4200 para ver la aplicación
