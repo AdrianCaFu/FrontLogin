@@ -21,3 +21,7 @@ Sigue estos pasos para instalar y ejecutar el proyecto:
 3. Instala las dependencias: npm install
 4. Ejecuta la aplicación: ng serve
 5. Abre tu navegador y visita http://localhost:4200 para ver la aplicación
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia GNU General Public License v3.0 (GPL-3.0) - mira el archivo [LICENSE](./LICENSE) para más detalles.
